@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 90px 320px 50px;
+  grid-gap: 3px;
+  margin: 220px;
+  padding: 10px;
+}
+
+.header {
+  /*  grid-column-start: 1;
+    grid-column-end: 3;  normal using*/
+  grid-column: 2/-1; /*  shorthand using */
+  background-color: blue;
+  text-align: center;
+  font-size: 32px;
+}
+.menu {
+  grid-row: 1/4;
+  background-color: hotpink;
+  text-align: center;
+  font-size: 32px;
+}
+
+.content {
+  grid-column: 2/-1;
+  background-color: yellowgreen;
+  font-size: 32px;
+  text-align: center;
+}
+.footer {
+  background-color: green;
+  grid-column: 2/-1;
+  text-align: center;
+  font-size: 32px;
+}
